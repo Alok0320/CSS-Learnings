@@ -1,0 +1,40 @@
+/* p{
+    By default position 
+    position: static;
+} */
+/* div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.box{
+    position: relative;
+    left: 15px;
+    top: 100px;
+} */
+div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+#box3{
+    /* box3's positioning is related to it's actual positioning  */
+    /* i.e- An element with position: relative; is positioned relative to its normal position */
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+#box1{
+    /* This is fixed with respect to viewport, will not move on scrolling  */
+    position: fixed;
+}
+/* position: absolute; --> isme hmara element sbse nearest positioned element k respect mein position hota h and agr koi nearest element positioned nhi h to pure viewport(puri screen) k respect mein position hoga */
+
+#box4{
+    /* In Sticky element will not be scrolled on scrolling, toggle between relative and fixed*/
+    position: sticky;
+    top: 0px;
+}
