@@ -1,0 +1,47 @@
+.box{
+    /* linear gradient */
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    /* By default top to bottom gradient will be automatically applied, if we are not going any specific direction */
+    background-image: linear-gradient(red,blue);
+    /* left to right */
+    background-image: linear-gradient(to right, red,blue);
+    /* right to left */
+    background-image: linear-gradient(to left, red,blue);
+    /* Bottom to Top */
+    background-image: linear-gradient(to top, red,blue);
+    /* Diagonally */
+    background-image: linear-gradient(to bottom right, orange,white,green);
+    /* Using Angle */
+    background-image: linear-gradient(180deg, orange,white,green);
+
+    /* Transparency */
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,255,1));
+
+
+}
+
+.mydiv{
+    /* Radial Gradient */
+    border: 1px solid black;
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    background-image: radial-gradient(red,yellow,green);
+    /* Giving Shape */
+    background-image: radial-gradient(circle,red,yellow,green);
+    /* Giving Colour Percentage which suggests how much a color can share  */
+    background-image: radial-gradient(yellow 5%,orange 10%,red 50%);
+
+
+}
+
+.divi{
+    border: 1px solid black;
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    background-image: conic-gradient(  red, green, yellow);
+    background-image: conic-gradient(  red 45deg, green 90deg, yellow 210deg);
+}
