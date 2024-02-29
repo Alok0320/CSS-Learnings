@@ -1,0 +1,131 @@
+*{
+    /* universal selector */
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    border: 2px solid green;
+
+    /* below flex property convert horizontal blocks into vertical blocks */
+    /* flexblock krne k liye */
+    display: flex;
+
+
+                 /* Flex container properties */
+
+
+    /* There are two axis in flexbox -- main axis (Horizontal) , cross axis (Vertical) */
+
+
+    /* below code changes to horizontal */
+    /* flex-direction: column; */
+
+    /* below code shieft blocks towards bottom of the container */
+    /* flex-direction: column-reverse; */
+
+    /* below code changes to vertical */
+    /* flex-direction: row; */
+
+    /* below code shieft blocks towards right side(opposite side of container) of the container  */
+    /* flex-direction: row-reverse; */
+
+    /* intact the width of div at certain level (Dso not let them squeeze) */
+    /* flex-wrap: wrap; */
+
+    /* div will be displace in descending order descending order */
+    /* flex-wrap: wrap-reverse; */
+
+    /* Flex-flow - short notation for flex-direction and flex-wrap  */
+    /* flex-flow: row wrap; */
+
+    /* justify-content -- acts on main axis (Horizontal) */
+
+    /* jutify-content - flex-start = to place the content at the left of the main axis (left end)*/
+    /* justify-content: flex-start; */
+
+    /* jutify-content - flex-end:  = to place the content at the right of the main axis (right end) */
+    /* justify-content: flex-end; */
+
+    /* jutify-content - center = to place the content at the center of the main axis (right end) */
+    /* justify-content: center; */
+
+    /* jutify-content - space-around = to give equal spacing between blocks */
+    /* justify-content: space-around; */
+
+    /* jutify-content - space-evenly = for giving equal spacing besides first and last block also */
+    /* justify-content: space-evenly; */
+
+    /* justify-content: space-between; */
+
+    /* below code will place all item upside of the cross-axis */
+    /* align-items: flex-start; */
+
+    /* below code will place all item downside of the cross-axis */
+    /* align-items: flex-end; */
+
+    /* below code will place all item at the center of the cross-axis */
+    /* align-items: center; */
+
+    /* below code will stretch the item equal to the height of the container */
+    /* align-items: stretch; */
+
+    
+
+    /* To center a div and a content in it  */
+    /* justify-content: center;
+    align-items: center; */
+
+    /* To add gap(margin) between divs,, we do not use margin attirbute because it will add unncessary margins at both of the ends  */
+    /* gap: 10px; */
+
+    /* Flex_Container properties -- Following properties will act in between 2 rows of divs or content */
+
+    /* align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly; */
+
+    flex-wrap: wrap;
+
+
+
+
+
+
+
+
+}
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+
+    /* below property will make occupy all the width of container  */
+    
+    /* flex-grow: 1; */
+    width: 100px;
+    flex-basis: 100px;
+
+    /* flex-basis and width dono width dete h but dono mein different ye h 
+    ki flex basis k through hme responsiveness mil jati h kisi item mein 
+    it means ki content jada hone pe content overlap n hokr trim ho jata h  */
+
+    /* below property will make div squize fast  */
+    /* flex-shrink: 4; */
+}
+
+/* Flex item properties */
+
+/* order Property = order property dekr boxes ko aage piche ya phir kis order mein rkhna h manipulate kiya ja skta h  */
+#box1{
+    order:1;
+    align-self: flex-end; 
+    
+}
+#box2{
+    order:8;
+}
+#box3{
+    order: 4;
+}

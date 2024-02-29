@@ -1,0 +1,24 @@
+h1{
+    text-shadow: 3px 3px red;
+    /* For adding blur */
+    text-shadow: 3px 3px 3px red;
+    /* For double shadow */
+    text-shadow: 3px 3px red, 5px 5px 5px green;
+    /* first value - Horizontal distance from text */
+    /* second value - Vertical distance from text */
+    /* first value - Blurish effect in text */
+}
+/* Giving Shadow to a Box */
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 15px, 15px 15px 15px brown;
+    /* If we are not defining any color in property, then the color of shadow will be = color of text */
+    color: blueviolet;
+    /* by giving negative value we can change the direction of box's shadow */
+    box-shadow: -10px -10px 15px, 15px 15px 15px brown;
+    /* for increasing size of shadow ,we have to give 4th parameter (spread-Radius) */
+    box-shadow: 10px 10px 15px 15px, 15px 15px 15px brown;
+
+}

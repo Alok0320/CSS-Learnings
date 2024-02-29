@@ -1,0 +1,31 @@
+.box{
+    margin: 100px;
+    background-color: aqua;
+    /* Moving horizontaly and vertically with the help of Transform property */
+    transform: translate(10px, 20px);
+    /* only horizontally */
+    transform: translateX(100px);
+    /* only vertically */
+    transform: translateY(100px);
+    /* for rotating clockwise*/
+    transform: rotate(45deg);
+    /* anti clockwise */
+    transform: rotate(-45deg);
+    /* for zooming (horizontal,vertical)*/
+    transform: scale(2,4);
+    /* horizontal scaling */
+    transform: scaleX(2);
+    /* vertical scaling */
+    transform: scaleY(4);
+    /* skew-for tilting */
+    transform: skew(45deg);
+    /* With the help of matrix propert we can apply all values at once */
+    
+
+
+    
+
+
+
+
+}

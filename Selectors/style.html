@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- how to llink external css file with html file -->
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- current document -- html document
+    destination document -- CSS document -->
+<!-- 
+    style tag is used to style any document internally and it is use in head tag -->
+    
+    <style>
+        p{
+            color: red;
+            font-size: larger;
+        }
+        h1{
+            background-color: aqua;
+        }
+        .A{
+            color: green;
+        }
+        
+        .C{
+            color: blue;
+        }
+        .small{
+            font-size: small;
+        }
+        .larger{
+            font-size: larger;
+        }
+        #Mybutton{
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        .idea:hover{
+            color: purple;
+        }
+        #cse:hover{
+            color:brown;
+        }
+
+ /*Concept of specifity -- when element selector, class selector, id selector, inline css ,, all four ways of styling used together */
+
+        h6{
+            color:blue;
+        }
+        .classstyle{
+            color: green ;
+        }
+        #idstyle{
+            color: yellow;
+        }
+        
+        /* clashing properties ewill be executed on the basis of preference order and all non - clashing properties will be executed */ 
+
+         
+        div{
+            background-color: red;
+            color: blue;
+        }
+        .divc{
+            background-color: orange;
+            font-size: large;
+        }
+        #divi{
+            background-color: yellow;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- element selector -- apppiled on a element, we use tag name itself in style tag and give desired style-- color[property] : red[value] -->
+  <p>This is my first paragraph</p>  
+  <h1>This is my first heading</h1>
+  <p>Second para</p>
+
+  <!-- Class selector-- applied on group of element given with same class name and is styled by using . before class name in style tag -->
+
+  <p class="A">ABCD</p>
+  
+  <!-- not needed to use unique class name, if we needed same property -->
+  <p class="A">PQRS</p>
+
+  <p class="C">XYZ</p>
+
+  <h2 class="small">Oops</h2>
+  <h3 class="small">Dsa</h3>
+  <h4 class="larger">Maths</h4>
+  <h5 class="larger">Humanities</h5>
+  
+
+  <!-- id selector --  use to give styling to a specific tag,, uses in style tag as starting with #tag name-->
+
+<button id="Mybutton">Submit</button>
+<br>
+
+<!-- pseudo class selector -- hover .....-->
+
+<!-- with the help of element name(selector) -->
+<a href="https://thecodehelp.in">buy my course</a>
+<br>
+<!-- by class selector -->
+<button class="idea">khridlo</button>
+<br>
+
+<!-- by id selector -->
+<button id="cse">DSA</button>
+<br>
+
+<!-- inline css-- should not be use -->
+<pre style="color:red">Jonny jonny yes papa, eating sugar no papa.</pre>
+
+<!-- internal css -- by using style tag in same html file in head tag -->
+
+<!-- External css -- By using another styling sheet [ 
+css file] -->
+
+<!-- Concept of specifity -- when element selector, class selector, id selector, inline css ,, all four ways of styling used together -->
+
+<!-- Inline css (Style attribute) >>> Id >>> Class >>> Tag seletor -->
+
+<h6 class="classstyle" id="idstyle" style ="color: red;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ullam.</h6>
+
+<!-- jo Properties clash hongi unhi mein keval preference wala order play mein aayega other wise different properties h to sari execute hongi -->
+
+<div class="divc" id="divi">Kya hal mere dost</div>
+
+
+</body>
+</html>

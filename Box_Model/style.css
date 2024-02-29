@@ -1,0 +1,23 @@
+.box{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: orange;
+    /* to add sepreation between 2 divs // Margin around border */
+    margin: 10px;
+    /* space between border content */
+    padding: 25px;
+    box-sizing: border-box;
+}
+#org{
+    /* Hexadecimal color name */
+    background-color: #798404;  
+}
+#wht{
+    /* rgb colors  */
+    background-color: rgba(186, 170, 28, 0.257);
+}
+#grn{
+    /* Predefined / cross browser color names */
+    background-color: magenta;
+}
